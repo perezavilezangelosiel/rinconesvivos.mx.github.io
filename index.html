@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rincones Vivos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script defer src="js/carrusel.js"></script>
+<div id="modalImagen" class="modal-imagen">
+  <span class="cerrar-modal" id="cerrarModal">&times;</span>
+  <img class="modal-contenido" id="imagenAmpliada" alt="Imagen ampliada">
+
+</div>
+
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-imagen">
+      <img src="assets/banner/Untitled-2.jpg"
+      <!-- <img src="" alt=""> -->
+      <div class="banner-texto">Rincones Vivos</div>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Inicio</a>
+      <a href="flora.html">Flora</a>
+      <a href="fauna.html">Fauna</a>
+      <a href="cuida-tu-mundo.html">Cuida tu mundo</a>
+      <a href="aprender-mas.html">Aprender más</a>
+      <a href="galeria-viva.html">Galería viva</a>
+    </div>
+  </header>
+
+  <main class="contenedor" style="background-color: #c8b16a;">
+    <!-- Sección de información -->
+    <section id="info1">
+      <h2>¿Qué es endémico?</h2>
+      <p>Cuando se dice que algo es «endémico», significa que es característico de un área y naturalmente presente en la región. Los biólogos a menudo usan este término para describir plantas y animales, y también puede ser usado por epidemiólogos. Por el contrario, la palabra estrechamente relacionada «epidemia» significa que algo es nuevo en el área y que no ocurre naturalmente. «Endémico» viene del griego en-, un prefijo que significa «en» y demos, que se usa para significar «distrito» en este sentido, aunque también puede significar «gente».
+</p>
+    </section>
+
+    <section id="info2">
+      <h2>El endemismo y las especies endémicas.</h2>
+      <p>Antes de hablar de las especies endémicas, primero expliquemos qué es el endemismo. En biología, el endemismo significa que un tipo de ser vivo solo existe de forma natural en un lugar específico, como una montaña, un lago o una isla. Esto depende tanto del ambiente del lugar como de las características del propio ser vivo. 
+
+Las especies endémicas son muy importantes porque ayudan a que haya una gran variedad de vida en el planeta. De hecho, los países que tienen más diversidad de seres vivos (llamados megadiversos) también tienen muchas especies endémicas, aunque ocupan solo una pequeña parte de la superficie de la Tierra. 
+
+Sin embargo, las especies endémicas son más frágiles y pueden desaparecer fácilmente, ya sea por causas naturales o por actividades humanas, como la caza ilegal, la destrucción de sus hábitats o la llegada de especies invasoras. Por eso, protegerlas es una de las principales tareas del cuidado del medio ambiente.
+</p>
+    </section>
+
+    <section id="info3">
+      <h2> Tipos de endemismos</h2>
+      <p>Las especies endémicas pueden clasificarse de dos formas, por su distribución territorial y por su genética, que dan lugar a una serie de categorías: 
+ 
+Según su distribución territorial 
+Micro Endémicas: son aquellas especies que se encuentran 
+establecidas en una zona específica. 
+ 
+Cuasi Endémicas: son aquellas especies que exceden los límites de su zona específica. 
+ 
+Semi Endémicas: son aquellas especies que pasan tan solo una parte del año en una zona 
+específica. 
+ 
+Según su genética 
+Paleoendemismo: son aquellas especies que acaban formando grupos aislados debido a sus 
+caracteres morfológicos, químicos o genéticos. 
+ 
+Esquizoendemismo: son aquellas especies que se forman por el aislamiento gradual y que tienen 
+características cromosómicas y morfológicas parecidas. 
+ 
+Patroendemismo: son aquellas especies que surgen por cambios en el número de cromosomas y se caracterizan por colonizar áreas más extensas que sus antecesoras. 
+ 
+Apoendemismo: son aquellas especies que derivan unas de otras y que, al contrario que las 
+patroendémicas, ocupan áreas más pequeñas que sus antecesoras.
+</p>
+    </section>
+
+    <section class="carrusel-wrapper">
+      <button class="carrusel-btn" id="prevBtn">◀</button>
+      <div class="carrusel" id="carrusel">
+        <img src="assets/Inicio/1infografia.jpg" alt="Imagen 1">
+        <img src="assets/Inicio/2infografia.jpg">
+        <img src="assets/Inicio/3infografia.jpg">
+        <img src="assets/Inicio/4infografia.jpg">
+        <img src="assets/Inicio/5infografia.jpg ">
+        <img src="assets/Inicio/inicio1.jpg">
+        <img src="assets/Inicio/inicio2.png">
+        <img src="assets/Inicio/inicio3.png">
+        <img src="assets/Inicio/inicio4.png">
+        <img src="assets/Inicio/inicio5.png">
+        <img src="assets/Inicio/inicio6.png">
+      </div>
+      <button class="carrusel-btn" id="nextBtn">▶</button>
+    </section>
+
+    <!-- Trivia de 10 preguntas -->
+    <section class="trivia">
+      <h2>Trivia</h2>
+      <form id="formTrivia">
+        <!-- Las preguntas se generan dinámicamente desde JS -->
+      </form>
+      <button id="btnEnviar">Enviar</button>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+  <a href="https://facebook.com" target="_blank">
+    <img src="assets/1.png">
+  </a>
+  <a href="https://x.com" target="_blank">
+    <img src="assets/2.png">
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="assets/3.png">
+  </a>
+  <a href="https://tiktok.com" target="_blank">
+    <img src="assets/4.png">
+  </a>
+
+</footer>
+
+  <script src="js/preguntas.js"></script>
+</body>
+</html>

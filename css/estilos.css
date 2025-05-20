@@ -1,0 +1,369 @@
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #c8b16a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor central */
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Banner principal */
+.banner {
+  background-color: #565a1f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegación del banner */
+.nav-links {
+  margin-top: 15px;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Preguntas del formulario */
+.pregunta {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Botón de enviar */
+#btnEnviar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #565a1f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btnEnviar:hover {
+  background-color: #404414;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Footer con íconos */
+.footer {
+  background-color: #565a1f;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+
+.grid-flora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.columna img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.videos-grid .video iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.grid-aprender {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+}
+
+.grid-aprender .columna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-aprender .columna img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.banner-imagen {
+  position: relative;
+  text-align: center;
+  height: 200px;
+  background-color: #565a1f;
+  overflow: hidden;
+}
+
+.banner-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+  z-index: 2;
+}
+
+.carrusel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  max-width: 80%;
+}
+
+.carrusel img {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
+.carrusel-btn {
+  background-color: #565a1f;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carrusel-btn:hover {
+  background-color: #404414;
+}
+
+.modal-imagen {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-contenido {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.especie-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.especie {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.especie .texto {
+  flex: 1;
+}
+
+.especie .imagen img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.contenido {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagen-central img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.cuadrícula-imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.cuadrícula-imagenes img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.galeria-viva {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagen-grande img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-contacto button {
+  background-color: #565a1f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #404414;
+}
+
+.footer {
+  background-color: #3d2013;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer img:hover {
+  transform: scale(1.1);
+}
+
+.zoom-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
